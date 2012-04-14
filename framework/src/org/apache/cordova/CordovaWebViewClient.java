@@ -242,6 +242,10 @@ public class CordovaWebViewClient extends WebViewClient {
             });
             t.start();
         }
+        else {
+            // Stop "app loading" spinner if showing
+            this.ctx.spinnerStop();
+        }
 
 
         // Shutdown if blank loaded
